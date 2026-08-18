@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Tempero da Geo</title>
+
+    <style>
+
+       header img {
+        width: 500px;
+        height: 500px;
+       } 
+
+       main img {
+        width: 60px;
+        height: 60px;
+       }
+
+       .container img {
+        width: 150px;
+        height: 150px;
+       }
+
+       .card {
+        font-family: 'Courier New', Courier, monospace;
+       }
+        
+        
+    </style>
+
+</head>
+
+<body>  
+
+    <header>
+        
+        <img src="logo.png" alt="logo da empresa tempero da Geo"><h1>Tempero da Geo</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cardapio">Cardapio</a></li>
+                <li><a href="pedido">Pedido</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="receita">Receita</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <p>Comida feita com carinho, sabor e aquele temperinho especial.</p>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Sabor que acolhe, tempero que fica na memória.</h2> 
+            <h2>Comida feita com carinho, ingredientes selecionados e aquele toque especial da Geo.</h2>
+        </section>
+
+
+        <section id="cardapio">
+        <div class="container">
+
+            <div class="card">
+                <img src="MassaCremosa.jpg" alt="Macarrao com molho branco cremoso e queijo"><h3>Massa Cremosa</h3>
+                <p>Macarrão ao molho cremoso de parmesão, acompanhado de tiras de frango grelhado e ervas frescas.</p>
+                <p>R$ 39,90</p>
+            </div>
+
+            <div class="card">
+                <img src="FileMignon.jpg" alt="File mignon grelhado com arroz"><h3>Filé ao Molho Especial</h3>
+                <p>Filé mignon grelhado, servido com molho de mostarda e mel, acompanhado de arroz branco e batatas rústicas.</p>
+                <p>R$ 49,90</p>
+            </div>
+
+            <div class="card">
+                <img src="Frango.jpg" alt="Frango empanado e frito com molho"><h3>Frango Crocante da Casa</h3>
+                <p>Filé de frango empanado e crocante, com molho especial da Geo.</p>
+                <p>R$ 34,90</p>
+            </div>
+
+            <div class="card">
+                <img src="Escondidinho.jpg" alt="Escondidinho de carne com pure de batata"><h3>Escondidinho</h3>
+                <p>Purê de batatas cremoso, recheado com carne desfiada e temperos especiais, gratinado com queijo.</p>
+                <p>R$ 54,90</p>
+            </div>
+
+            <div class="card">
+                <img src="ArrozCamarrao.jpg" alt="Arroz cremoso com camarrao"><h3>Arroz Cremoso de Camarão</h3>
+                <p>Arroz cremoso preparado com camarões, tomate, ervas e um toque especial da casa, finalizado com parmesão.</p>
+                <p>R$ 54,90</p>
+            </div>
+
+            <div class="card">
+                <img src="Brownie.jpg" alt="Brownie de colocate com calde chocolate"><h3>Sobremesa Chocolatudo</h3>
+                <p>Brownie de chocolate servido quentinho, acompanhado de sorvete de creme e calda de chocolate.</p>
+                <p>R$ 19,90</p>
+            </div>
+
+        </div>
+        </section>
+
+
+        <section id="pedido">
+            <h3>Faça Seu Pedido</h3>
+
+            <form action="pedido" method="post">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="contato">Contato:</label>
+                <input type="number" id="numero" name="number" required>
+
+                <label for="cidade">Cidade de entrega</label>
+                <select id="cidade" name="cidade">
+                    <option value="smo">São Miguel do Oeste</option>
+                    <option value="gba">Guaraciaba</option>
+                    <option value="descaso">Descanso</option>
+                    <option value="banderante">Banderante</option>
+                </select>
+
+                <label for="endereco">Endereço Completo:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="entrega">Entrega
+                <input type="radio" name="retirar" value="retirar">Retirar
+                <input type="radio" name="entregar" value="entregar">Entregar
+                </label>
+
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+                </form>
+
+
+        </section>
+
+
+
+
+
+
+        <section id="sobre">
+            <h3>UM POUCO SOBRE NOS</h3>
+            <P>O Tempero da Geo nasceu para tornar a cozinha um lugar de inspiração, criatividade e bons momentos. 
+                Acreditamos que uma boa receita não é apenas uma lista de ingredientes, mas uma oportunidade de 
+                criar memórias e compartilhar experiências.<br>Aqui você encontra pratod deliciosos, práticas e 
+                variadas, pensadas para quem ama cozinhar e também para quem está dando os primeiros passos na cozinha. 
+                Do prato simples do dia a dia às receitas especiais para surpreender, queremos ajudar você a encontrar 
+                inspiração para cada ocasião.<br>Nossa missão é levar mais sabor para a sua rotina, apresentando receitas 
+                fáceis de acompanhar, dicas úteis e novas ideias para transformar ingredientes em pratos que dão vontade de repetir.</P>
+        </section>
+
+        <section id="contato">
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+</body>
+</html>
