@@ -5,47 +5,27 @@
     <meta name="viewport">
     <title>Tempero da Geo</title>
 
-    <style>
+    <link rel="stylesheet" href="style.css">
 
-       header img {
-        width: 500px;
-        height: 500px;
-       } 
-
-       main img {
-        width: 60px;
-        height: 60px;
-       }
-
-       .container img {
-        width: 150px;
-        height: 150px;
-       }
-
-       .card {
-        font-family: 'Courier New', Courier, monospace;
-       }
-        
-        
-    </style>
 
 </head>
 
-<body>  
-
+<body> 
+    <div class="corpo">
+    
     <header>
         
-        <img src="logo.png" alt="logo da empresa tempero da Geo"><h1>Tempero da Geo</h1>
+        <img src="logo.png" alt="logo da empresa tempero da Geo">
 
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#cardapio">Cardapio</a></li>
-                <li><a href="pedido">Pedido</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="receita">Receita</a></li>
+                <li><a href="#pedido">Pedido</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#video">Video</a></li>
+                
             </ul>
             <p>Comida feita com carinho, sabor e aquele temperinho especial.</p>
         </nav>
@@ -111,6 +91,9 @@
                 <label for="contato">Contato:</label>
                 <input type="number" id="numero" name="number" required>
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
                 <label for="cidade">Cidade de entrega</label>
                 <select id="cidade" name="cidade">
                     <option value="smo">São Miguel do Oeste</option>
@@ -122,11 +105,12 @@
                 <label for="endereco">Endereço Completo:</label>
                 <input type="text" id="endereco" name="endereco" required>
 
-                <label for="entrega">Entrega
-                <input type="radio" name="retirar" value="retirar">Retirar
-                <input type="radio" name="entregar" value="entregar">Entregar
+                <label for="entrega">Opção de entrega:
+                <input type="radio" name="entrega" value="retirar">Retirar
                 </label>
-
+                <label>
+                <input type="radio" name="entrega" value="entregar">Entregar
+                </label>
 
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem"></textarea>
@@ -136,11 +120,6 @@
 
 
         </section>
-
-
-
-
-
 
         <section id="sobre">
             <h3>UM POUCO SOBRE NOS</h3>
@@ -154,16 +133,23 @@
         </section>
 
         <section id="contato">
+            <h3>Como nos encontrar?</h3>
+
+            <a href="https://api.whatsapp.com/send?phone=5549999346042"><img src="whats.png"></a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1781.747305530382!2d-53.526815709849956!3d-26.72858801871496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fa5c5f9cf04df1%3A0x402acc9154c0bae4!2sSenac%20S%C3%A3o%20Miguel%20do%20Oeste!5e0!3m2!1spt-BR!2sbr!4v1787178712166!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Localizacao da empresa"></iframe>
+        </section>
+
+        <section id="video">
+            <h3>Video</h3>
+
+            <video controls>
+                <source src="video1.mp4" controls width="50%" type="video/mp4">
+            </video>
 
         </section>
 
-
-
     </main>
 
-
-
-
-
+    </div>
 </body>
 </html>

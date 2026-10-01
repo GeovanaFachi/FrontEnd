@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(212, 223, 223);
+}
+
+nav {
+    background-color: rgb(62, 66, 65);
+    text-align: center;
+    width: 100%;
+    height: 30px;
+}
+
+nav a {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.container img {
+    width: 500px;
+    height: 200px;
+}
+

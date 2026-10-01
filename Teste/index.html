@@ -3,7 +3,25 @@
 <head>
     <title>Botão Interativo</title>
     <style>
-        .meu-botao, .botao2 {
+        header {
+            margin: 50px;
+            background-color: #7c6a81;
+            height: 300px;
+            width: 90%;
+
+            display: flex;
+            gap: 15px;
+            width: 100%;
+        }
+        main {
+            margin:70px;
+        }
+        
+        .conteiner {
+            display: flex;
+        }
+        
+        .autofalante, .card {
             background-color: #ffffff;
             color: rgb(218, 214, 15);
             padding: 10px 20px;
@@ -12,10 +30,12 @@
             cursor: pointer;
             font-size: 16px;
         }
-        .meu-botao:hover, .botao2:hover {
-            background-color: #d11c49;
+
+        .botao2:hover {
+            background-color: #eeb8c5;
         }
-        .botao2 img, .meu-botao img {
+
+        .card img, .animacao img {
             width: 50px;
             height: 50px;
         }
@@ -30,29 +50,152 @@
             cursor: pointer;
             font-size: 30px; 
         }
+
         .resultado:hover {
             background-color: #97e783;
+        }
+
+        .perfil {
+            width: 400px;
+        }
+
+        .perfil img {
+            width: 200px;     
+            height: 200px;     
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px;
+            border: solid;
+            object-fit: cover;
+        }
+
+        .perfil p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            margin: 10px;
+            margin-left: 60px;
+        }
+
+        .autofalante:hover {
+            background-color: #eeb8c5;
+        }
+
+        h2{
+            margin: 10px;
+            margin-left: 60px;
+            margin-top: 120px;
+        }
+
+        .conteiner1 {
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            background-color: #eeb8c5;
+            gap: 100px;
+        }
+
+        .conteiner2 {
+            margin: 10px;
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: #ddb8ee;
+            justify-content: flex-end;
+            gap: 100px;
+        }
+
+        .conteiner3 {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: #d2eeb8;
+            gap: 30px;
+        }
+
+        .conteiner4 {
+            margin: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: #eed5b8;
+            gap: 30px;
+        }
+
+        .conteiner5 {
+            margin: 10px;
+            display: flex;
+            gap: 300px;
+        }
+
+        .conteiner5 img {
+            height: 300px;
+            width: 300px;
+            margin: 30%;
         }
 
     </style>
 </head>
 <body>
-    <button class="meu-botao" onclick="mostrarMensagem()">
-        <img src="Sol.jpg">
-    </button>
-    <button class="botao2" onclick="mostrarMensagem2()">
-        <img src="Flor.jpg">
+    <header>
+        <div class="perfil">
+            <img src="dog.jpg">
+            <p>CACHORRO DOG</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="conteiner">
+    <button class="autofalante" onclick="mostrarMensagem()">
+        <img src="som.jpg">
     </button>
 
     <script>
         function mostrarMensagem() {
-            document.getElementById('resultado').innerHTML = "Que dia ensolarado não é mesmo?!";
+            document.getElementById('resultado').innerHTML = "AU AU AU AU AU AU AU AU";
         }
         function mostrarMensagem2() {
             document.getElementById('resultado').innerHTML = "Bom dia flor do dia";
         }
     </script>
-
     <div class="resultado" id="resultado"></div>
+
+
+    <div class="card">
+        <img src="Flor.jpg">
+        <p>UMA FLOR PARA UMA FLOR</p>
+    </div>
+        </div>
+
+        <div class="conteiner1">
+            <div>Teste teste teste teste teste teste teste vteste teste teste teste vteste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste </div>
+            <div>Agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora </div>
+            <div> Sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor </div>
+        </div>
+
+         <div class="conteiner2">
+            <div>Teste teste teste teste teste teste teste vteste teste teste teste vteste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste </div>
+            <div>Agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora </div>
+            <div> Sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor </div>
+        </div>
+
+         <div class="conteiner3">
+            <div>Teste teste teste teste teste teste teste vteste teste teste teste vteste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste </div>
+            <div>Agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora </div>
+            <div> Sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor </div>
+        </div>
+
+         <div class="conteiner4">
+            <div>Teste teste teste teste teste teste teste vteste teste teste teste vteste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste </div>
+            <div>Agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora agora </div>
+            <div> Sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor sol flor </div>
+        </div>
+
+        <div class="conteiner5">
+            <div><img src="Flor.jpg"></div>
+            <div><img src="som.jpg"></div>
+            <div><img src="Sol.jpg"></div>
+        </div>
+
+
+    </main>
 </body>
 </html>

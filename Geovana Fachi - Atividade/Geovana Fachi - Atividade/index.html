@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #inicio {
+            background-color: rgb(245, 107, 185);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 700;
+            border-radius: 10px ;
+            color: rgb(12, 42, 214);
+        }
+
+        #sobre {
+            background-color: rgb(241, 131, 194);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 15px ;
+            color: rgb(46, 73, 49);
+        }
+
+        #servicos {
+            background-color: rgb(243, 165, 209);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 20px ;
+        }
+
+        #contato {
+            background-color: rgb(238, 197, 220);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 25px ;
+            color: red;
+        }
+
+        #atividade {
+           background-color: rgb(240, 231, 236);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 30px ; 
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Geovana Fachi</h1>
+            <p> CSS externo:<br>
+                - alterei a cor de fundo com a tag body;<br>
+                - alterei com a tag nav cor, alinhamento e tamanho do mesmo;<br>
+                - com o seletor combinado nav a alterei a cor, tamanho e estilo da fonte;<br>
+                - seletor combinado com a classe conteiner img formatando tamanho.<br>
+                
+                CSS interno:<br>
+                - Os seletores ID alterado cor de fundo em degrade, bordar e fonte da letra.<br>
+
+                CSS em linha:<br> 
+                - Adicionado video e imagem e formatação em linha;<br>
+                
+            </p>
+        </div>
+
+        <img src="img/senac.webp" alt="logo senac" width="500px" height="300px">
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+            <a href="#atividade">Atividade</a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Bem-vindo ao SENAC</h2>
+            <p>A MELHOR INSTITUIÇÃO DE ENSINO - Aqui você encontra cursos para todas as áreas.</p>
+            <a href="#contato">Entre em contato</a>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+            <p>
+                Espaço destinado à apresentação da empresa, profissional ou negócio.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos serviços</h2>
+
+            <div>
+                <h3>Serviço 1</h3>
+                <p>Descrição do primeiro serviço.</p>
+            </div>
+
+            <div>
+                <h3>Serviço 2</h3>
+                <p>Descrição do segundo serviço.</p>
+            </div>
+
+            <div>
+                <h3>Serviço 3</h3>
+                <p>Descrição do terceiro serviço.</p>
+            </div>
+
+            <div class="container">
+
+                <div class="card">
+                <img src="img/logo-branco-80-anos.png" "><h3>LOGO SENAC</h3>
+            </div>
+
+            <div class="card">
+                <video controls>
+                <source src="video/Rede social mais popular de 2004 até 2025.mp4" controls width="20%" type="video/mp4"><h3>VIDEO SENAC</h3>
+                </video>
+
+            </div>
+
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em contato</h2>
+
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+<section id="atividade">
+    <h2>Atividade — Customização do Wireframe com CSS</h2>
+
+    <p>
+        Utilize o arquivo HTML disponibilizado pelo professor e desenvolva
+        sua própria estilização utilizando CSS.
+    </p>
+
+    <p>
+        O objetivo é transformar a estrutura HTML em uma página visualmente
+        organizada, utilizando as propriedades CSS trabalhadas em aula.
+    </p>
+
+    <h3>Propriedades obrigatórias</h3>
+
+    <ul>
+        <li><strong>border</strong> — aplicação de bordas;</li>
+        <li><strong>width</strong> — definição de largura;</li>
+        <li><strong>height</strong> — definição de altura;</li>
+        <li><strong>text-align</strong> — alinhamento dos textos;</li>
+        <li><strong>color</strong> — definição das cores dos textos;</li>
+        <li><strong>font-size</strong> — definição do tamanho das fontes;</li>
+        <li><strong>font-weight</strong> — definição do peso das fontes;</li>
+        <li><strong>font-family</strong> — definição da família tipográfica;</li>
+        <li><strong>background-color</strong> — definição das cores de fundo.</li>
+    </ul>
+
+    <h3>Orientações</h3>
+
+    <p>
+        As propriedades deverão ser aplicadas de maneira coerente com a
+        estrutura da página e utilizadas para personalizar os diferentes
+        elementos do projeto.
+    </p>
+
+    <p>
+        Utilize sua criatividade na escolha de cores, fontes, tamanhos,
+        bordas e alinhamentos, mantendo a organização e a legibilidade
+        da página.
+    </p>
+</section>
+    </main>
+
+    <footer>
+        <p>Nome da Empresa - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
